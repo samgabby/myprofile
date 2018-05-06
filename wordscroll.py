@@ -7,7 +7,7 @@ class Ok:
 	def __add__(self, other):
 		for i in range(len(other.text) + 1):
 			script = self.text[:i] + '>' + other.text
-			script += '>' + other.text + self.text[i:]
+			script += '>' + self.text[i:]
 			print(script)
 
 
@@ -21,7 +21,5 @@ boy=Ok(b)
 
 
 result = girl + boy
-rasoolt = boy + girl
-print(result)
 print('\n' * 7)
-print(rasoolt)
+rasoolt = boy + girl
